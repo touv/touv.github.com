@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ltr" dir="ltr" lang="fr"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-language" content="fr">
+		<meta name="Description" content="Nicolas Thouvenin aka Touv">
+		<meta name="Author" content="Touv" lang="fr">
+		<meta name="verify-v1" content="IixB/sk2r7r7ze9Sifojz0HhxXnUtUbRQMKDKhfl+rA=">
+		<title>Touv</title>
+		<link type="image/png" rel="icon" href="http://www.touv.fr/favicon.png">
+		<link type="image/x-icon" rel="shortcut icon" href="http://www.touv.fr/favicon.ico">
+		<style type="text/css">
+			BODY {
+				background-color: #fff;
+				/* background-image: url(background.jpg);  */
+				background-repeat: no-repeat;
+				filter:Alpha(opacity=94);-moz-opacity:0.94;opacity: 0.94; 
+			}
+			A, A:LINK, A:ACTIVE, A:VISITED, A:HOVER {
+				color: #024CBC;				
+				font-weight: bold;
+			}
+			#bloc1 {
+				top: 10px;
+				left: 10px;
+				width: 400px;
+			}
+			#bloc2 {
+				top: 10px;
+				left: 430px;
+				width: 300px;
+			}
+			.bloc .gfc-resultsHeader .gfc-title {
+				color: #00306F;
+				font-size: 1.3em;
+				font-weight:bold;
+			}
+			.bloc .gf-result .gf-author, .bloc .gf-result .gf-spacer,.bloc .gf-result .gf-relativePublishedDate {
+				color: #8F8F93;
+				font-style: italic;
+			}
+			#logo {
+				position: absolute;
+				top: 70px;
+				left: 725px;	
+			} 
+			.bloc {
+				position: absolute;
+				color: #00306F;
+				background-color:#fff;
+				border:1px solid #00306F;
+				padding: 5px;
+				filter:Alpha(opacity=70);
+				-moz-opacity:0.70;
+				opacity: 0.7; 
+				-moz-border-radius: 10px; 
+				-webkit-border-radius: 10px; 
+				 border-radius: 10px;         
+			 }
+		</style>
+		<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAOnnhxc5WHl2B1gcBENsogxToKgSLRNLB74Ju4XnQeN6j9STtfRRbGjgKWOot575DxC4ZOzBhwgg-OA"></script> 
+        <script type="text/javascript">
+            google.load("jquery", "1.3.2");
+        </script>
+        <script type="text/javascript" src="jquery.gfeed.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() { 
+					$('#bloc1').gFeed({  
+						url: 'http://blog.touv.fr/feeds/posts/default/', 
+						title: 'Sur mon blog actuellement :',
+						max: 6 
+					});  
+						/*
+				   $('#bloc2').gFeed({  
+						url: 'http://feeds.delicious.com/v2/rss/touv/devel?count=15', 
+						title: 'Mes petits D&eacute;v. perso...',
+						max: 15
+					});
+					*/
+						}); 
+		</script> 
+		</head>
+		<body>
+			<div id="bloc1" class="bloc"> </div>
+			<div id="bloc2" class="bloc">
+				<div class="gfc-control">
+					<div class="gfc-resultsbox-visible">
+						<div class="gfc-resultsRoot">
+							<div class="gfc-resultsHeader">
+								<div class="gfc-title">Mes petits dév. perso :</div>
+							</div>
+							<div class="gfc-results">
+								<div class="gfc-result">
+									<div class="gf-result">
+										<div class="gf-title">
+											<a class="gf-title" href="http://blog.touv.fr/2009/01/un-package-pear-pour-une-chaine-de.html" target="_self">Text_Normalize</a>
+										</div>
+										<div class="gf-snippet">
+											"Normaliser" une chaîne de caractères en PHP.
+										</div>
+									</div>
+								</div>
+								<div class="gfc-result">
+									<div class="gf-result">
+										<div class="gf-title">
+											<a class="gf-title" href="http://blog.touv.fr/2006/04/collection-de-petits-scripts-pour.html" target="_self">TouvSH</a>
+										</div>
+										<div class="gf-snippet">
+											Collection de petits scripts pour système Unix ou Linux.
+										</div>
+									</div>
+								</div>
+								<div class="gfc-result">
+									<div class="gf-result">
+										<div class="gf-title">
+											<a class="gf-title" href="http://services.touv.fr/music/albums/covers/" target="_self">Music Albums Covers Search</a>
+										</div>
+										<div class="gf-snippet">
+											Pour trouver la couverture d'un album de musique.
+										</div>
+									</div>
+								</div>
+								<div class="gfc-result">
+									<div class="gf-result">
+										<div class="gf-title">
+											<a class="gf-title" href="http://www.aswl.touv.fr/" target="_self">Aswl</a>
+										</div>
+										<div class="gf-snippet">
+											Gérer des séances d’entraînement de football.
+										</div>
+									</div>
+								</div>
+								<div class="gfc-result">
+									<div class="gf-result">
+										<div class="gf-title">
+											<a class="gf-title" href="http://ait.touv.fr/" target="_self">AIT - All is tag</a>
+										</div>
+										<div class="gf-snippet">
+											Moteur de stockage en PHP.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--        <div id="bloc3" class="bloc"> </div>-->
+			<!--        <div id="bloc4" class="bloc"> </div>-->
+
+			<img id="logo" src="logo.png" alt="T O U V" height="300" width="300">
+
+			<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript">
+				try {
+					var pageTracker = _gat._getTracker("UA-501866-3");
+					pageTracker._trackPageview();
+				} catch(err) {}
+			</script>
+	</body>
+</html>
