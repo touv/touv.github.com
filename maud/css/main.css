@@ -1,0 +1,15 @@
+h1,h2 {
+		text-align:center;
+}
+body {
+		background:  #f6c7f9;
+		font-family: Kids, Helvetica, Arial, sans-serif;
+		margin-top: 40px;
+}
+#content {
+		background:  #f6c7f9;
+		color: #9700ff;
+}
+.item {
+		margin-top: 80px;
+}
