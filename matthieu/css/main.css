@@ -1,0 +1,90 @@
+body {
+		background-color:  #fff;
+		padding:20px;
+		/*color: #566bae; /*B*/
+		color: #14921f;
+		/*color: #728448; /*V*/
+		/*#7a964c;*/
+		font-family: Kids, Helvetica, Arial, sans-serif;
+}
+a, a:link, a:visited, a:hover {
+		color: #14921f;
+}
+#maud {
+		text-align: right;
+		padding-right: 75px;
+}
+#header {
+		padding-top: 25px;
+		padding-bottom: 5px;
+}
+#content {
+		 background-image: url(../images/current/fond.jpg);
+		 /* border: 5px solid #566bae; /*B*/
+			/* border: 5px solid #728448; /*V*/
+			border: 5px solid #14921f; 
+}
+#footer {
+		height: 50px;
+		padding-bottom: 25px;
+		text-align:center;
+}
+#comment {
+		margin: 0 auto;
+		width: 50%;
+  background: transparent url(../images/current/quoleft.png) left top no-repeat;
+}
+#comment div {
+  padding: 0 48px;
+  background: transparent url(../images/current/quoright.png) right bottom no-repeat;
+}
+
+#logo {
+		margin-top: 465px;
+}
+
+#gallery { position: relative; }
+#pictures { 
+		position: relative; 
+		height: 480px; 
+}
+#pictures img { 
+		position: absolute; 
+		top: 0; 
+		left: 0; 
+		border: 6px solid #fff;
+		cursor: pointer;
+}
+
+
+
+.caption-top, .caption-bottom {
+	color: #ffffff;	
+	padding: 1.2em;	
+	font-weight: bold;
+	font-size: 13px;	
+	font-family: arial;	
+	cursor: default;
+	border: 0px solid #334143;
+	background: #000000;
+}
+.caption-top {
+   border-width: 0px 0px 8px 0px;
+}
+.caption-bottom {
+   border-width: 8px 0px 0px 0px;
+}
+.caption a, .caption a {
+	border: 0 none;
+	text-decoration: none;
+	background: #000000;
+	padding: 0.3em;
+}
+.caption a:hover, .caption a:hover {
+	background: #202020;
+}
+.caption-wrapper {
+	float: left;
+}
+br.c { clear: both; }
+
