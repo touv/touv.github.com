@@ -9,6 +9,7 @@
 		<title>Touv</title>
 		<link type="image/png" rel="icon" href="//favicon.png">
 		<link type="image/x-icon" rel="shortcut icon" href="//favicon.ico">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<style type="text/css">
 			BODY {
 				background-color: #000;
@@ -27,10 +28,31 @@
 				display:none;
 			}
 			#bloc2 {
-				top: 10px;
+				top: 50px;
 				left: 430px;
 				width: 300px;
+				padding: 0px;
+				margin: 0px;
 			}
+			.links ul
+			{
+				margin: 0;
+				padding: 0;
+			}
+
+			.links ul li { 
+				list-style-type: none;
+				margin: 0;
+				padding-left: 15px;;
+			}
+			.links a:hover {
+				color: #385279;
+			}
+
+			.github { 
+				float :right;
+			}
+
 			.bloc .gfc-resultsHeader .gfc-title {
 				color: #00306F;
 				font-size: 30px;
@@ -42,8 +64,8 @@
 			}
 			#logo {
 				position: absolute;
-				top: 220px;
-				left: 740px;	
+				top: 120px;
+				left: 585px;	
 			} 
 			.bloc {
 				position: absolute;
@@ -51,124 +73,74 @@
 				background-color:#fff;
 				border:1px solid #00306F;
 				padding: 5px;
-			 }
+			}
 		</style>
 		<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAOnnhxc5WHl2B1gcBENsogxToKgSLRNLB74Ju4XnQeN6j9STtfRRbGjgKWOot575DxC4ZOzBhwgg-OA"></script> 
-        <script type="text/javascript">
-            google.load("jquery", "1.3.2");
-        </script>
-        <script type="text/javascript" src="jquery.gfeed.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() { 
-					$('#bloc1').gFeed({  
-						url: 'http://blog.touv.fr/feeds/posts/default/', 
-						title: 'Sur mon blog actuellement :',
-						max: 6 
-					});  
-						/*
-				   $('#bloc2').gFeed({  
-						url: 'http://feeds.delicious.com/v2/rss/touv/devel?count=15', 
-						title: 'Mes petits D&eacute;v. perso...',
-						max: 15
-					});
-					*/
-						}); 
+google.load("jquery", "1.3.2");
+		</script>
+		<script type="text/javascript" src="jquery.gfeed.js"></script>
+
+		<script type="text/javascript">
+$(document).ready(function() { 
+		$('#bloc1').gFeed({  
+url: 'http://blog.touv.fr/feeds/posts/default/', 
+title: 'Last posts',
+max: 6 
+});  
+		/*
+		   $('#bloc2').gFeed({  
+url: 'http://feeds.delicious.com/v2/rss/touv/devel?count=15', 
+title: 'Mes petits D&eacute;v. perso...',
+max: 15
+});
+		 */
+		}); 
 		</script> 
 		</head>
 		<body>
-			<div id="bloc1" class="bloc"> </div>
-			<div id="bloc2" class="bloc">
-				<div class="gfc-control">
-					<div class="gfc-resultsbox-visible">
-						<div class="gfc-resultsRoot">
-							<div class="gfc-resultsHeader">
-								<div class="gfc-title">Touv</div>
-							</div>
-							<div class="gfc-results">
-								<div class="gfc-result">
-									<div class="gf-result">
-										<div class="gf-title">
-											<a class="gf-title" href="http://blog.touv.fr/" target="_self">Blogger</a>
-										</div>
-										<div class="gf-snippet">
-											pour partager quelques idées numériques ...
-										</div>
-									</div>
-								</div>
-								<div class="gfc-result">
-									<div class="gf-result">
-										<div class="gf-title">
-											<a class="gf-title" href="https://www.npmjs.org/~touv" target="_self">NPM Packages</a>
-										</div>
-										<div class="gf-snippet">
-											quelques bouts de code ...
-										</div>
-									</div>
-								</div>
+		<div id="bloc1" class="bloc"> </div>
+		<div id="bloc2" class="bloc">
+		<div class="links">
+				<ul>
+					<li><a href="http://blog.touv.fr/" ><i class="fa fa-home fa-5x"></i></a></li>
+					<li><a href="https://twitter.com/thouveni/" ><i class="fa fa-twitter fa-5x"></i></a></li>
+					<li><a href="https://www.npmjs.org/~touv" ><i class="fa fa-code fa-5x"></i></a></li>
+					<li><a href="https://github.com/touv" ><i class="fa fa-github fa-5x"></i></a></li>
+					<li><a href="http://fr.linkedin.com/in/nthouvenin" ><i class="fa fa-linkedin fa-5x"></i></a></li>
+					<li><a href="https://trello.com/thouveni" ><i class="fa fa-trello fa-5x"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<!--        <div id="bloc3" class="bloc"> </div>-->
+		<!--        <div id="bloc4" class="bloc"> </div>-->
 
-								
+		<div id="logo">
+			<!-- Placez cette balise où vous souhaitez faire apparaître le gadget widget. -->
+			<div class="g-person" data-href="//plus.google.com/u/0/100470147949342588997" data-rel="author"></div>
 
-								<div class="gfc-result">
-									<div class="gf-result">
-										<div class="gf-title">
-											<a class="gf-title" href="http://fr.linkedin.com/in/nthouvenin" target="_self">Linkedin</a>
-										</div>
-										<div class="gf-snippet">
-											<a href="http://fr.linkedin.com/in/nthouvenin">
-												<img src="http://s.c.lnkd.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x25_fr_FR.png?locale=" width="160" height="25" border="0" alt="Voir le profil de Nicolas Thouvenin sur LinkedIn">
-											</a>
-										</div>
-									</div>
-								</div>
+			<!-- Placez cette ballise après la dernière balise widget. -->
+			<script type="text/javascript">
+window.___gcfg = {lang: 'fr'};
 
-							
-								<div class="gfc-result">
-									<div class="gf-result">
-										<div class="gf-title">
-											<a class="gf-title" href="https://github.com/touv" target="_self">GitHub</a>
-											</div>
-											<div class="gf-snippet">
-												<iframe src="https://githubbadge.appspot.com/touv" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
-											</div>
-										</div>
-									</div>
-								</div>
+(function() {
+ var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+ po.src = 'https://apis.google.com/js/platform.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+ })();
+			</script>
+		</div>
 
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--        <div id="bloc3" class="bloc"> </div>-->
-				<!--        <div id="bloc4" class="bloc"> </div>-->
-
-				<div id="logo">
-					<!-- Placez cette balise où vous souhaitez faire apparaître le gadget widget. -->
-<div class="g-person" data-href="//plus.google.com/u/0/100470147949342588997" data-rel="author"></div>
-
-<!-- Placez cette ballise après la dernière balise widget. -->
-<script type="text/javascript">
-  window.___gcfg = {lang: 'fr'};
-
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-				</div>
-
-				<script type="text/javascript">
+		<script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				</script>
+		</script>
 
-				<script type="text/javascript">
+		<script type="text/javascript">
 try {
 	var pageTracker = _gat._getTracker("UA-501866-3");
 	pageTracker._trackPageview();
 } catch(err) {}
-				</script>
-				</body>
-				</html>
+		</script>
+		</body>
+		</html>
